@@ -1,14 +1,9 @@
 <h1> Azure SIEM Lab (Guided Project)</h1>
 
 
-<h2>Description</h2>
-This project was completed as a guided lab, where I followed step-by-step instructions to build a basic Security Operations Center (SOC) in Microsoft Azure. I deployed a virtual machine (VM), exposed it as a honeypot, and integrated Microsoft Sentinel to analyze real-world attack data.
-
-<br />
-
 <h2>Project overview:</h2>
 
-This document provides a detailed step-by-step walkthrough of how I built a SIEM solution in Azure as part of a guided project.
+This project is based on a guided walkthrough I followed to gain hands-on experience creating a Security Information and Event Management (SIEM) solution in **Microsoft Azure** using Microsoft Sentinel.
 
 ---
 
@@ -46,7 +41,7 @@ This document provides a detailed step-by-step walkthrough of how I built a SIEM
 ---
 
 ## 4. Collecting and Analyzing Security Events
-- Queried security events using KQL 
+- Queried security event logs using KQL 
 - Built a query to display geographic locations of attacks  
 
 <img width="80%" height="80%" alt="Screenshot 2025-09-11 at 7 31 56 PM" src="https://github.com/user-attachments/assets/a77a2b66-0e5f-42af-82d5-e476f3c18c05" />
@@ -63,8 +58,8 @@ This document provides a detailed step-by-step walkthrough of how I built a SIEM
 
 ---
 
-## 📚 References
-- Guided project followed from [this YouTube video](https://www.youtube.com/watch?v=g5JL2RIbThM&t=2933s)
+## Reference
+- Guided project followed from [Josh Madakor on Youtube](https://www.youtube.com/watch?v=g5JL2RIbThM&t=2933s)
 
 ---
 
