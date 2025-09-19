@@ -1,29 +1,30 @@
-<h1> Azure SIEM Lab</h1>
+<h1> Azure SIEM Lab (Guided Project)</h1>
 
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+This project was completed as a guided lab, where I followed step-by-step instructions to build a basic Security Operations Center (SOC) in Microsoft Azure. I deployed a virtual machine (VM), exposed it as a honeypot, and integrated Microsoft Sentinel to analyze real-world attack data.
+
 <br />
 
+<h2>Project walk-through:</h2>
 
-<h2>Languages and Utilities Used</h2>
-
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
-
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> (21H2)
-
-<h2>Program walk-through:</h2>
-
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h2>1. Setting up the environment</h2> 
+* Create a resource group to hold the project resources <br/>
+* Deploy a virtual network to host our virtual machine <br/>
+<br/>
+<img width="80%" height="80%" alt="Screenshot 2025-09-18 at 11 49 32 PM" src="https://github.com/user-attachments/assets/e2bcfd79-1baf-431c-bcb5-ac7973875b8b"/>
+<br/>
+* Deploy a Windows 10 Pro virtual machine <br/>
+<br/>
+<img width="80%" height="80%" alt="Screenshot 2025-09-18 at 11 56 20 PM" src="https://github.com/user-attachments/assets/cb18b974-af33-45ac-92c7-53e9896664ea" />
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h2>2. Exposing our machine</h2>  
+* Configure the rules of our Network Security Group to allow traffic to enter our machine from anywhere <br/>
+<br/>
+<img width="1403" height="720" alt="Screenshot 2025-09-19 at 12 02 58 AM" src="https://github.com/user-attachments/assets/8543bea1-58cd-4917-80b4-7e72a722fed4" />
+
+
 <br />
 <br />
 Enter the number of passes: <br/>
