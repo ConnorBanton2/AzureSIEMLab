@@ -6,45 +6,69 @@ This project was completed as a guided lab, where I followed step-by-step instru
 
 <br />
 
-<h2>Project walk-through:</h2>
+<h2>Project overview:</h2>
 
-<h2>1. Setting up the environment</h2> 
-* Create a resource group to hold the project resources <br/>
-* Deploy a virtual network to host our virtual machine <br/>
-<br/>
-<img width="80%" height="80%" alt="Screenshot 2025-09-18 at 11 49 32 PM" src="https://github.com/user-attachments/assets/e2bcfd79-1baf-431c-bcb5-ac7973875b8b"/>
-<br/>
-* Deploy a Windows 10 Pro virtual machine <br/>
-<br/>
-<img width="80%" height="80%" alt="Screenshot 2025-09-18 at 11 56 20 PM" src="https://github.com/user-attachments/assets/cb18b974-af33-45ac-92c7-53e9896664ea" />
-<br />
-<br />
-<h2>2. Exposing our machine</h2>  
-* Configure the rules of our Network Security Group to allow traffic to enter our machine from anywhere <br/>
-<br/>
-<img width="1403" height="720" alt="Screenshot 2025-09-19 at 12 02 58 AM" src="https://github.com/user-attachments/assets/8543bea1-58cd-4917-80b4-7e72a722fed4" />
+This document provides a detailed step-by-step walkthrough of how I built a SIEM solution in Azure as part of a guided project.
+
+---
+
+## 1. Setting up the Environment
+- Created a **Resource Group** in Azure to hold project resources  
+- Deployed a **Virtual Network** to host the VM  
+- Created a **Windows 10 Pro Virtual Machine**  
+- Configured **RDP access** for remote login  
+
+📸 *Screenshot example:*  
+![Resource Group](./screenshots/resource-group.png)
+
+---
+
+## 2. Configuring Log Analytics
+- Set up a **Log Analytics Workspace**  
+- Connected the VM to the workspace  
+- Verified data ingestion from Windows event logs  
+
+📸 *Screenshot example:*  
+![Log Analytics](./screenshots/log-analytics.png)
+
+---
+
+## 3. Integrating Microsoft Sentinel
+- Enabled **Microsoft Sentinel** on the workspace  
+- Configured **data connectors** for Windows Security Events  
+- Created a **basic analytic rule** to detect failed logins  
+
+📸 *Screenshot example:*  
+![Sentinel Dashboard](./screenshots/sentinel-dashboard.png)
+
+---
+
+## 4. Collecting and Analyzing Security Events
+- Generated failed login attempts on the VM  
+- Queried events using **KQL** (e.g., failed RDP logins)  
+- Built a query to display geographic locations of attacks  
+
+📸 *Screenshot example:*  
+![KQL Query](./screenshots/kql-query.png)
+
+---
+
+## 5. Building Dashboards
+- Created visual dashboards in Sentinel  
+- Built an **Attack Map** showing global login attempts  
+- Monitored attack frequency and sources in real-time  
+<img width="80%" height="80%" alt="Screenshot 2025-09-17 at 12 35 44 PM" src="https://github.com/user-attachments/assets/5b05ab17-45ff-434d-84a9-22d7e1ce5d7b" />
+
+ 
+
+---
+
+## 📚 References
+- Guided project followed from [this YouTube video](https://www.youtube.com/watch?v=g5JL2RIbThM&t=2933s)
+
+---
 
 
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <!--
