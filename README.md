@@ -1,6 +1,6 @@
 # Azure SIEM Lab (Guided Project)
 
-## 📌 Project Overview
+## Project Overview
 This project is based on a guided walkthrough I followed to gain hands-on experience creating a Security Information and Event Management (SIEM) solution in **Microsoft Azure** using Microsoft Sentinel. The goal here was to simulate a basic home SOC environment by deploying a honeypot VM, forwarding logs to Azure Log Analytics, and integrating Sentinel to detect and analyze real-world attack data.
 
 ---
